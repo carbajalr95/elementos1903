@@ -17,7 +17,7 @@ RepoCliente repoCliente;
 
     @Override
     public void run(String... args) throws Exception {
-        repoCliente.save(new Cliente(1, "Rody", "rodyypb@gmail.com"));
+        //repoCliente.save(new Cliente(1, "Rody", "rodyypb@gmail.com"));
         //repoCliente.save(new Cliente(2, "Firulais", "firulais@gmail.com"));
         //***BUSCAR TODOS -findAll() Y BUSCAR POR EMAIL -finByEmail() [Referenciado en la clase "RepoCliente]***
         
@@ -27,7 +27,7 @@ RepoCliente repoCliente;
         //***BUSCAR POR ID***
         System.out.println(repoCliente.findById(2));
         //***BORRAR EL PRIMERO Y VOLVEMOS A INSERTAR
-        //repoCliente.deleteById(1);
+        repoCliente.deleteById(1);
     }
 
 }
